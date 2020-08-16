@@ -36,7 +36,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter
 
                 reader.Read();
 
-                dictionary.Add(propertyName, GetValue(ref reader, options));
+                dictionary.Add(propertyName, ExtractValue(ref reader, options));
             }
 
             return dictionary;
@@ -114,7 +114,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter
             HandleValue(writer, null, value);
         }
 
-        private object GetValue(ref Utf8JsonReader reader, JsonSerializerOptions options)
+        private object ExtractValue(ref Utf8JsonReader reader, JsonSerializerOptions options)
         {
             switch (reader.TokenType)
             {
@@ -142,11 +142,13 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter
                     var list = new List<object>();
                     while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
                     {
-                        list.Add(GetValue(ref reader, options));
+                        list.Add(ExtractValue(ref reader, options));
                     }
-                    return list.ToArray();
+
+                    return list;
+                default:
+                    throw new JsonException($"'{reader.TokenType}' is not supported");
             }
-            throw new JsonException($"Unhandled TokenType {reader.TokenType}");
         }
     }
 }

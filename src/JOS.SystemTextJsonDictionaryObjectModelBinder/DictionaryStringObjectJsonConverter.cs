@@ -77,7 +77,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter
                     {
                         list.Add(ExtractValue(ref reader, options));
                     }
-                    return list.ToArray();
+                    return list;
                 default:
                     throw new JsonException($"'{reader.TokenType}' is not supported");
             }

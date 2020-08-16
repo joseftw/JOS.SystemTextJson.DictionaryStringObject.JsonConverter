@@ -141,8 +141,8 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
             result.ShouldContainKey("name");
-            var array = (object[])result["name"];
-            array.Length.ShouldBe(3);
+            var array = (List<object>)result["name"];
+            array.Count.ShouldBe(3);
             array.ShouldContain(1L);
             array.ShouldContain(2L);
             array.ShouldContain(3L);
@@ -177,8 +177,8 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             result.ShouldContainKey("name");
             var nestedObject = (Dictionary<string, object>)result["name"];
             nestedObject.ShouldContainKey("property");
-            var array = (object[])nestedObject["property"];
-            array.Length.ShouldBe(3);
+            var array = (List<object>)nestedObject["property"];
+            array.Count.ShouldBe(3);
             array.ShouldContain(1L);
             array.ShouldContain(2L);
             array.ShouldContain(3L);
