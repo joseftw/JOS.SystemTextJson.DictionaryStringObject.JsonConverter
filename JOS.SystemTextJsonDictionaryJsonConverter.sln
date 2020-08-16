@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30404.54
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.Api", "src\JOS.Api\JOS.Api.csproj", "{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B2D3E68-44C9-4BDF-80D4-EC154C21D317}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.SystemTextJsonDictionaryObjectJsonConverter", "src\JOS.SystemTextJsonDictionaryObjectModelBinder\JOS.SystemTextJsonDictionaryObjectJsonConverter.csproj", "{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests", "test\JOS.SystemTextJsonDictionaryObjectModelBinder.Tests\JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests.csproj", "{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.SystemTextJsonDictionary.Benchmarks", "src\JOS.SystemTextJsonDictionary.Benchmarks\JOS.SystemTextJsonDictionary.Benchmarks.csproj", "{3B365631-D422-425A-AE28-DECA6D1D1D17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B365631-D422-425A-AE28-DECA6D1D1D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B365631-D422-425A-AE28-DECA6D1D1D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B365631-D422-425A-AE28-DECA6D1D1D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B365631-D422-425A-AE28-DECA6D1D1D17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C95EFFF-B2FF-40C9-920C-FD67FB5E383B} = {4B2D3E68-44C9-4BDF-80D4-EC154C21D317}
+		{9D2AF069-FF0F-40A0-8E08-BAC04F012F1D} = {4B2D3E68-44C9-4BDF-80D4-EC154C21D317}
+		{73F45BA4-DAD0-476A-8CA4-EB2A0C3863B8} = {2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}
+		{3B365631-D422-425A-AE28-DECA6D1D1D17} = {4B2D3E68-44C9-4BDF-80D4-EC154C21D317}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {577A21D0-F752-47D6-9455-6B54FD51324D}
+	EndGlobalSection
+EndGlobal

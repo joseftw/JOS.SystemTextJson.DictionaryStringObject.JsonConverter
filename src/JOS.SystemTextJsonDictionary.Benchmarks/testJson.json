@@ -1,0 +1,29 @@
+﻿{
+  "name": "whatevs",
+  "data": {
+    "string": "string",
+    "int": 1,
+    "bool": true,
+    "date": "2020-01-23T00:01:02Z",
+    "decimal": 12.345,
+    "null": null,
+    "array": [ 1, 2, 3 ],
+    "objectArray": [
+      {
+        "string": "string",
+        "int": 1,
+        "bool": true
+      },
+      {
+        "string": "string2",
+        "int": 2,
+        "bool": true
+      }
+    ],
+    "object": {
+      "string": "string",
+      "int": 1,
+      "bool": true
+    }
+  }
+}
