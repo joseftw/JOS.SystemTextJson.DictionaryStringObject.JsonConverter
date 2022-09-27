@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.csproj" />
   </ItemGroup>
 
 </Project>
