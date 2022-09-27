@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using JOS.SystemTextJsonDictionaryObjectJsonConverter;
 
-namespace JOS.SystemTextJsonDictionary.Benchmarks;
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks;
 
 public class BenchmarkHelper
 {

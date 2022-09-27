@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Jobs;
 
-namespace JOS.SystemTextJsonDictionary.Benchmarks
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks
 {
     [SimpleJob(RuntimeMoniker.Net70)]
     [MemoryDiagnoser]

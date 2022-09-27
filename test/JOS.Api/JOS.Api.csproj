@@ -7,9 +7,9 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\JOS.STJ.DictionaryStringObjectJsonConverter\JOS.SystemTextJsonDictionaryObjectJsonConverter.csproj" />
-  </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore.csproj" />
+  </ItemGroup>
 
 </Project>

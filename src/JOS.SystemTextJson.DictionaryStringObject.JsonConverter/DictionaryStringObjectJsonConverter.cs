@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace JOS.SystemTextJsonDictionaryObjectJsonConverter
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter
 {
     public class DictionaryStringObjectJsonConverter : JsonConverter<Dictionary<string, object?>>
     {

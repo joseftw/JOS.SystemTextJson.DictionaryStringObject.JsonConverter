@@ -4,7 +4,7 @@ using System.Text.Json;
 using Shouldly;
 using Xunit;
 
-namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests;
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter;
 
 public class Serialization_DictionaryStringObjectJsonConverterTests
 {

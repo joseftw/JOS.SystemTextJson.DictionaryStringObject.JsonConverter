@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace JOS.SystemTextJsonDictionary.Benchmarks
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks
 {
     class Program
     {

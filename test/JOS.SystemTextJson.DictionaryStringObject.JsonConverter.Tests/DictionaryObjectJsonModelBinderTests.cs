@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Logging;
@@ -10,7 +11,7 @@ using NSubstitute;
 using Shouldly;
 using Xunit;
 
-namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter
 {
     public class DictionaryObjectJsonModelBinderTests
     {

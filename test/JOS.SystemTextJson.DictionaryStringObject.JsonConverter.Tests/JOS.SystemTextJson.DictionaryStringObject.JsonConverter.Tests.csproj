@@ -7,6 +7,7 @@
     <ImplicitUsings>disabled</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>JOS.SystemTextJson.DictionaryStringObject.JsonConverter</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,9 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\JOS.Api\JOS.Api.csproj" />
-    <ProjectReference Include="..\..\src\JOS.STJ.DictionaryStringObjectJsonConverter\JOS.SystemTextJsonDictionaryObjectJsonConverter.csproj" />
-    <ProjectReference Include="..\..\src\JOS.SystemTextJsonDictionary.Benchmarks\JOS.SystemTextJsonDictionary.Benchmarks.csproj" />
+    <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.csproj" />
+    <ProjectReference Include="..\JOS.Api\JOS.Api.csproj" />
+    <ProjectReference Include="..\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks.csproj" />
   </ItemGroup>
 
 </Project>

@@ -12,15 +12,15 @@
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\JOS.STJ.DictionaryStringObjectJsonConverter\JOS.SystemTextJsonDictionaryObjectJsonConverter.csproj" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <None Update="testJson.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.csproj" />
   </ItemGroup>
 
 </Project>

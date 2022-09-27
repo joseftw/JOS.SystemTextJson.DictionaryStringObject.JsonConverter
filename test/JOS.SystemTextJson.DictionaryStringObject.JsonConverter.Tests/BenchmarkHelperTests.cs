@@ -1,8 +1,8 @@
-using JOS.SystemTextJsonDictionary.Benchmarks;
+using JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks;
 using Shouldly;
 using Xunit;
 
-namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests;
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter;
 
 public class BenchmarkHelperTests
 {

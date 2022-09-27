@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using JOS.SystemTextJsonDictionaryObjectJsonConverter;
+using JOS.SystemTextJson.DictionaryStringObject.JsonConverter;
 using Microsoft.AspNetCore.Mvc;
+using JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore;
 
 namespace JOS.Api.Controllers
 {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Shouldly;
 using Xunit;
 
-namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests;
+namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter;
 
 public class Deserialization_DefaultTests
 {

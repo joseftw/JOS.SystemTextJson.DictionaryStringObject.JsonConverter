@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30404.54
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B2D3E68-44C9-4BDF-80D4-EC154C21D317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.SystemTextJson.DictionaryStringObject.JsonConverter", "src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.csproj", "{7238F015-4F37-42E3-86B9-778F30095AE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks", "test\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Benchmarks.csproj", "{4EECC67B-8457-458E-98C4-7EEC2FC734DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.Api", "test\JOS.Api\JOS.Api.csproj", "{3DDB4AA1-2556-4EB8-AAFA-69507C67D870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Tests", "test\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Tests\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.Tests.csproj", "{7836F32E-2178-4360-B678-B548B93E9238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore", "src\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore\JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore.csproj", "{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		
+		{7238F015-4F37-42E3-86B9-778F30095AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7238F015-4F37-42E3-86B9-778F30095AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7238F015-4F37-42E3-86B9-778F30095AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7238F015-4F37-42E3-86B9-778F30095AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EECC67B-8457-458E-98C4-7EEC2FC734DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EECC67B-8457-458E-98C4-7EEC2FC734DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EECC67B-8457-458E-98C4-7EEC2FC734DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EECC67B-8457-458E-98C4-7EEC2FC734DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDB4AA1-2556-4EB8-AAFA-69507C67D870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDB4AA1-2556-4EB8-AAFA-69507C67D870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDB4AA1-2556-4EB8-AAFA-69507C67D870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDB4AA1-2556-4EB8-AAFA-69507C67D870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7836F32E-2178-4360-B678-B548B93E9238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7836F32E-2178-4360-B678-B548B93E9238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7836F32E-2178-4360-B678-B548B93E9238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7836F32E-2178-4360-B678-B548B93E9238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7238F015-4F37-42E3-86B9-778F30095AE9} = {4B2D3E68-44C9-4BDF-80D4-EC154C21D317}
+		{4EECC67B-8457-458E-98C4-7EEC2FC734DA} = {2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}
+		{3DDB4AA1-2556-4EB8-AAFA-69507C67D870} = {2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}
+		{7836F32E-2178-4360-B678-B548B93E9238} = {2E1C2D5A-19ED-4952-8D88-B52271A5DFFA}
+		{27F96BEE-2C0A-48AD-A35E-4E2B9AB8D407} = {4B2D3E68-44C9-4BDF-80D4-EC154C21D317}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {577A21D0-F752-47D6-9455-6B54FD51324D}
+	EndGlobalSection
+EndGlobal
