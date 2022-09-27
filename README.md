@@ -17,6 +17,7 @@ slower because of the cast.
 
 Just the JsonConverter
 ```dotnet add package JOS.SystemTextJson.DictionaryStringObject.JsonConverter```
+
 JsonConverter + Model binder for ASP.Net Core
 ```dotnet add package JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore```
 ## Tests
