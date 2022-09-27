@@ -43,7 +43,7 @@ namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter
 
                 reader.Read();
 
-                dictionary.Add(propertyName, ExtractValue(ref reader, options));
+                dictionary.Add(propertyName!, ExtractValue(ref reader, options));
             }
 
             return dictionary;

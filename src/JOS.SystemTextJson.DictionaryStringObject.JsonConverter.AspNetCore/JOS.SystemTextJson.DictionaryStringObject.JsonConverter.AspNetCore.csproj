@@ -1,14 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <ImplicitUsings>disable</ImplicitUsings>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <PackageId>JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore</PackageId>
-        <Version>2.0.1</Version>
+        <Version>3.0.0</Version>
         <Authors>Josef Ottosson</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/joseftw/JOS.SystemTextJson.DictionaryStringObject.JsonConverter</PackageProjectUrl>
     </PropertyGroup>
     
     <ItemGroup>
