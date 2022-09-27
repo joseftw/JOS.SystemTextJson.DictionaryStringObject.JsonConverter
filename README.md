@@ -13,6 +13,9 @@ and again, and again...until it crashes with a stack overflow, [more info here.]
 It's really easy to avoid though. When serializing, don't pass in any options that contains this JsonConverter in it's converter list. If you do, it will still work, just a bit 
 slower because of the cast.
 
+## Install
+
+```dotnet add package JOS.SystemTextJson.DictionaryStringObject.JsonConverter```
 
 ## Tests
 This runs all tests except the tests in `Deserialization_DefaultTests`. The tests in that class are supposed to fail. They test if the default behaviour of System.Text.Json 
