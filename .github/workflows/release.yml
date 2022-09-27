@@ -17,13 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-    - name: NBGV
-      uses: dotnet/nbgv@master
-      id: nbgv
     - name: Test
       run: dotnet test -c Release --filter 'FullyQualifiedName!~Deserialization_DefaultTests'
     - name: Pack nuget
       run: dotnet pack src/JOS.STJ.DictionaryStringObjectJsonConverter -c Release --no-build --output .
     - name: Push to NuGet
-      run: cat *.nupkg
-      #run: dotnet nuget push "*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
