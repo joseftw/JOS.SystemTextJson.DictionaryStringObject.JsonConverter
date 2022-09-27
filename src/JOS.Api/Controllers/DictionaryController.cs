@@ -30,8 +30,9 @@ namespace JOS.Api.Controllers
 
     public class MyInput
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
+
         [JsonConverter(typeof(DictionaryStringObjectJsonConverter))]
-        public Dictionary<string, object> Data { get; set; }
+        public Dictionary<string, object> Data { get; set; } = null!;
     }
 }

@@ -58,7 +58,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": \"string\"}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -71,7 +71,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": \"2020-01-23T01:02:03Z\"}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -84,7 +84,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": 1}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -97,7 +97,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": 1.234}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -110,7 +110,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": true}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -123,11 +123,11 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": null}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
-            result.ShouldContainKeyAndValue("name", null);
+            result!.ShouldContainKeyAndValue("name", null);
         }
 
         [Fact]
@@ -136,7 +136,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": [1,2,3]}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -154,7 +154,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": {\"property\": 100}}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);
@@ -170,7 +170,7 @@ namespace JOS.SystemTextJsonDictionaryObjectJsonConverter.Tests
             var modelBindingContext = CreateModelBindingContext("{\"name\": {\"property\": [1,2,3]}}");
 
             await _sut.BindModelAsync(modelBindingContext);
-            var result = (Dictionary<string, object>)modelBindingContext.Result.Model;
+            var result = (Dictionary<string, object>)modelBindingContext.Result.Model!;
 
             modelBindingContext.Result.IsModelSet.ShouldBeTrue();
             result.Count.ShouldBe(1);

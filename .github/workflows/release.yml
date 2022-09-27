@@ -1,0 +1,29 @@
+name: Release to NuGet
+
+on:
+  release:
+    types: [published]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: "0"
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: NBGV
+      uses: dotnet/nbgv@master
+      id: nbgv
+    - name: Test
+      run: dotnet test -c Release --filter 'FullyQualifiedName!~Deserialization_DefaultTests'
+    - name: Pack nuget
+      run: dotnet pack src/JOS.STJ.DictionaryStringObjectJsonConverter -c Release --no-build --output .
+    - name: Push to NuGet
+      run: cat *.nupkg
+      #run: dotnet nuget push "*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json

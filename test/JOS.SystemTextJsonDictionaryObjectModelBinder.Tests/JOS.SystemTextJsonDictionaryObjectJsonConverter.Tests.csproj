@@ -1,17 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disabled</ImplicitUsings>
     <IsPackable>false</IsPackable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0-preview-20200812-03" />
-    <PackageReference Include="NSubstitute" Version="4.2.2" />
-    <PackageReference Include="Shouldly" Version="4.0.0-beta0002" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="NSubstitute" Version="4.4.0" />
+    <PackageReference Include="Shouldly" Version="4.1.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -19,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\JOS.Api\JOS.Api.csproj" />
+    <ProjectReference Include="..\..\src\JOS.STJ.DictionaryStringObjectJsonConverter\JOS.SystemTextJsonDictionaryObjectJsonConverter.csproj" />
+    <ProjectReference Include="..\..\src\JOS.SystemTextJsonDictionary.Benchmarks\JOS.SystemTextJsonDictionary.Benchmarks.csproj" />
   </ItemGroup>
 
 </Project>

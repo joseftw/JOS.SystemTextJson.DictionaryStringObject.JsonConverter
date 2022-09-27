@@ -6,8 +6,7 @@ namespace JOS.SystemTextJsonDictionary.Benchmarks
     {
         static void Main(string[] args)
         {
-            var summary1 = BenchmarkRunner.Run<DeserializeBenchmark>();
-            var summary2 = BenchmarkRunner.Run<SerializeBenchmark>();
+            var summary2 = BenchmarkRunner.Run<JsonConverterBenchmarks>();
         }
     }
 }
