@@ -20,8 +20,8 @@ jobs:
     - name: Test
       run: dotnet test -c Release --filter 'FullyQualifiedName!~Deserialization_DefaultTests'
     - name: Pack DictionaryStringObjectJsonConverter 
-      run: dotnet pack src/JOS.STJ.DictionaryStringObjectJsonConverter -c Release --no-build --output .
+      run: dotnet pack src/JOS.SystemTextJson.DictionaryStringObject.JsonConverter -c Release --no-build --output .
     - name: Pack DictionaryStringObjectJsonConverter.AspNetCore 
-      run: dotnet pack src/JOS.STJ.DictionaryStringObjectJsonConverter.AspNetCore -c Release --no-build --output .
+      run: dotnet pack src/JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore -c Release --no-build --output .
     - name: Push to NuGet
-      run: dotnet nuget push "JOS.STJ.DictionaryStringObjectJsonConverter*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "JOS.SystemTextJson.DictionaryStringObject.JsonConverter*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
