@@ -32,7 +32,7 @@ public class Deserialization_DefaultTests
         result.ShouldBeEmpty();
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task
         GivenObjectWithStringPropertyWithDateTimeValue_WhenDeserializeAsync_ThenResultContainsSaidPropertyAsDateTime()
     {
@@ -48,7 +48,7 @@ public class Deserialization_DefaultTests
         result!["name"].ShouldBeEquivalentTo(new DateTime(2020, 1, 23, 1, 2, 3, 0, DateTimeKind.Utc));
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task GivenObjectWithIntProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyAsLong()
     {
         var jsonString = "{\"name\": 1}";
@@ -63,7 +63,7 @@ public class Deserialization_DefaultTests
         result!["name"].ShouldBe(1);
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task GivenObjectWithDecimalProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyAsDecimal()
     {
         var jsonString = "{\"name\": 1.234}";
@@ -78,7 +78,7 @@ public class Deserialization_DefaultTests
         result!["name"].ShouldBe(1.234M);
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task GivenObjectWithBoolProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyAsBool()
     {
         var jsonString = "{\"name\": true}";
@@ -108,7 +108,7 @@ public class Deserialization_DefaultTests
         result!["name"].ShouldBeNull();
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task GivenObjectWithArrayProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyWithArrayValue()
     {
         var jsonString = "{\"name\": [1,2,3]}";
@@ -127,7 +127,7 @@ public class Deserialization_DefaultTests
         array.ShouldContain(3L);
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task
         GivenObjectWithObjectProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyWithNestedDictionary()
     {
@@ -145,7 +145,7 @@ public class Deserialization_DefaultTests
         nestedObject["property"].ShouldBe(100L);
     }
 
-    [Fact]
+    [Fact(DisplayName = "This should fail - if it succeeds, the default implementation works - no need for custom converter")]
     public async Task
         GivenObjectPropertyWithArrayProperty_WhenDeserializeAsync_ThenResultContainsSaidPropertyWithNestedDictionaryAndArrayProperty()
     {
