@@ -28,7 +28,7 @@ namespace JOS.SystemTextJson.DictionaryStringObject.JsonConverter.AspNetCore
                 throw new ArgumentNullException(nameof(bindingContext));
             }
 
-            if (bindingContext.ModelType != typeof(Dictionary<string, object>))
+            if (bindingContext.ModelType != typeof(Dictionary<string, object>) && bindingContext.ModelType != typeof(IDictionary<string, object>))
             {
                 throw new NotSupportedException(
                     $"The '{nameof(DictionaryObjectJsonModelBinder)}' model binder should only be used on Dictionary<string, object>, it will not work on '{bindingContext.ModelType.Name}'");
